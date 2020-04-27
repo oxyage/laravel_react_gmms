@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 class NavbarFooter extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-md navbar-dark bg-primary fixed-bottom">
+            <nav className="navbar navbar-expand-md navbar-light bg-light mt-5">
                 <a className="navbar-brand" href="">Navbar</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"

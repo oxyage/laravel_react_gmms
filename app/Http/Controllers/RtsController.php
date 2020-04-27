@@ -14,7 +14,7 @@ class RtsController extends Controller
      */
     public function index()
     {
-        //
+        return rts::all();
     }
 
     /**

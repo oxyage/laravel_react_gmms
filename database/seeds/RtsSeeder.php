@@ -8,7 +8,7 @@ class rtsSeeder extends Seeder
 
     protected $RTS = [
         ['name' => 'Александровский', 'coord_x' => '74', 'coord_y' => '3'],
-        ['name' => 'Алещня', 'coord_x' => '53', 'coord_y' => '80'],
+        ['name' => 'Алешня', 'coord_x' => '53', 'coord_y' => '80'],
         ['name' => 'Байкова', 'coord_x' => '89', 'coord_y' => '55'],
         ['name' => 'Белая Березка', 'coord_x' => '55', 'coord_y' => '24'],
         ['name' => 'Брянск', 'coord_x' => '74', 'coord_y' => '62'],
@@ -23,7 +23,7 @@ class rtsSeeder extends Seeder
         ['name' => 'Клетня', 'coord_x' => '47', 'coord_y' => '67'],
         ['name' => 'Климово', 'coord_x' => '22', 'coord_y' => '23'],
         ['name' => 'Кокоревка', 'coord_x' => '73', 'coord_y' => '33'],
-        ['name' => 'Красная Гора', 'coord_x' => '52', 'coord_y' => '7'],
+        ['name' => 'Красная Гора', 'coord_x' => '7', 'coord_y' => '51'],
         ['name' => 'Красное', 'coord_x' => '64', 'coord_y' => '54'],
         ['name' => 'Навля', 'coord_x' => '79', 'coord_y' => '44'],
         ['name' => 'Новозыбков', 'coord_x' => '18', 'coord_y' => '30'],
