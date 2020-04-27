@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class RTS extends Model
+class rts extends Model
 {
     //
 }

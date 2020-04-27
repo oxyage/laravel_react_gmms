@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRCUSTable extends Migration
+class CreateHttpTriggersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateRCUSTable extends Migration
      */
     public function up()
     {
-        Schema::create('r_c_u_s', function (Blueprint $table) {
+        Schema::create('http_triggers', function (Blueprint $table) {
             $table->id();
+            $table->integer('trigger_id')->nullable();
+            $table->string('path');
+            $table->json('post_data')->default('{}');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateRCUSTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('r_c_u_s');
+        Schema::dropIfExists('http_triggers');
     }
 }

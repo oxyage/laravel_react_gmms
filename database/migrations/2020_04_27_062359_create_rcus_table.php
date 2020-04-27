@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRTSSTable extends Migration
+class CreateRcusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateRTSSTable extends Migration
      */
     public function up()
     {
-        Schema::create('r_t_s_s', function (Blueprint $table) {
+        Schema::create('rcus', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateRTSSTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('r_t_s_s');
+        Schema::dropIfExists('rcus');
     }
 }

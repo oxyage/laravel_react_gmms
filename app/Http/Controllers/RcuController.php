@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\RTS;
+use App\rcu;
 use Illuminate\Http\Request;
 
-class RTSController extends Controller
+class RcuController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class RTSController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\RTS  $rTS
+     * @param  \App\rcu  $rcu
      * @return \Illuminate\Http\Response
      */
-    public function show(RTS $rTS)
+    public function show(rcu $rcu)
     {
         //
     }
@@ -52,10 +52,10 @@ class RTSController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\RTS  $rTS
+     * @param  \App\rcu  $rcu
      * @return \Illuminate\Http\Response
      */
-    public function edit(RTS $rTS)
+    public function edit(rcu $rcu)
     {
         //
     }
@@ -64,10 +64,10 @@ class RTSController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\RTS  $rTS
+     * @param  \App\rcu  $rcu
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, RTS $rTS)
+    public function update(Request $request, rcu $rcu)
     {
         //
     }
@@ -75,10 +75,10 @@ class RTSController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\RTS  $rTS
+     * @param  \App\rcu  $rcu
      * @return \Illuminate\Http\Response
      */
-    public function destroy(RTS $rTS)
+    public function destroy(rcu $rcu)
     {
         //
     }
