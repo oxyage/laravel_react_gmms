@@ -15,6 +15,9 @@ class CreateRtsTable extends Migration
     {
         Schema::create('rts', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->tinyInteger('coord_x');
+            $table->tinyInteger('coord_y');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateRtsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rts');
+        Schema::dropIfExists('rtsSeeder');
     }
 }

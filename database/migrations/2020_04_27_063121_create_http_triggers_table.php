@@ -17,7 +17,7 @@ class CreateHttpTriggersTable extends Migration
             $table->id();
             $table->integer('trigger_id')->nullable();
             $table->string('path');
-            $table->json('post_data')->default('{}');
+            $table->json('post_data');
             $table->timestamps();
         });
     }

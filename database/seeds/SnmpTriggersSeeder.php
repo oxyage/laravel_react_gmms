@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class snmp_triggers extends Seeder
+class snmpTriggersSeeder extends Seeder
 {
     /**
      * Run the database seeds.

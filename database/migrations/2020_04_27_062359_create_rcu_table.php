@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRcusTable extends Migration
+class CreateRcuTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateRcusTable extends Migration
      */
     public function up()
     {
-        Schema::create('rcus', function (Blueprint $table) {
+        Schema::create('rcu', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
