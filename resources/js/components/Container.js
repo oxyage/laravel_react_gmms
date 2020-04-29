@@ -9,15 +9,23 @@ import Rts from "./RTS";
 
 class Container extends Component {
 
-    constructor(props)
+    constructor()
     {
-        super(props);
+
+        super();
         this.state = {
 
         };
+        //console.log(this.props);
     }
 
     render() {
+
+        const Buttons = <div>
+            <button onClick={this.props.dispatcher}>
+                Click me from container
+            </button>
+        </div>;
 
 
         return (
@@ -32,15 +40,17 @@ class Container extends Component {
                             width: "1126px"
                         }}>
                             {
+
                                 this.props.RTSList.map(rts =>{
-                                    return <Rts rts={rts} key={rts.id}/>
+                                    return <Rts rts={rts} key={rts.id} dispatcher={this.props.dispatcher} Loading={this.props.Loading} />
                                 })
 
                             }
                         </div>
                     </div>
                     <div className="col-sm-3">
-                        <NavbarRight />
+                        <NavbarRight Loading={this.props.Loading} />
+                        {Buttons}
                     </div>
                 </div>
 

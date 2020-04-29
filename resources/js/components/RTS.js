@@ -2,18 +2,34 @@ import React, {Component} from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 import "../../css/rts.css";
 
-function Rts(props){
+class Rts extends Component{
 
-    return (
-        <div className="rts"
-             style={{top: (100 - props.rts.coord_y) + '%', left: props.rts.coord_x + "%"}}
-        >
-            <div className='tower'></div>
+    constructor(){
+        super();
 
-            <div className='name'> {props.rts.name} </div>
-        </div>
-    );
+        this.state = {
 
+        };
+
+    }
+    render() {
+        return (
+            <div className="rts"
+                 style={{top: (100 - this.props.rts.coord_y) + '%', left: this.props.rts.coord_x + "%"}}
+            >
+
+
+                <div className="tower" onClick={this.props.dispatcher}>
+
+                </div>
+
+                <div className='name'>
+                    {this.props.rts.name}
+
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Rts;

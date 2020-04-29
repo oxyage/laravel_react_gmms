@@ -5,10 +5,12 @@ class RtsList extends Component {
 
     constructor()
     {
-        super();
+        super(this.props);
         this.state = {
             list: []
         };
+
+
 
     }
 

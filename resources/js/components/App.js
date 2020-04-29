@@ -19,6 +19,12 @@ class App extends Component {
 
     }
 
+    changeLoadingState(newState){
+        this.setState({
+            loading: newState
+        })
+    }
+
     componentDidMount() {
 
 
@@ -36,12 +42,23 @@ class App extends Component {
 
     }
 
+    myFunc()
+    {
+        this.setState({
+            loading: !this.state.loading
+        })
+    }
+
     render() {
+
+
+
         return (
             <div>
                 <NavbarTop Loading={this.state.loading}/>
-                <Container RTSList = {this.state.RTSList} />
-                <NavbarFooter/>
+
+                <Container RTSList = {this.state.RTSList} Loading={this.state.loading} dispatcher={this.myFunc.bind(this)} />
+                <NavbarFooter Loading={this.state.loading}/>
             </div>
         );
     }
