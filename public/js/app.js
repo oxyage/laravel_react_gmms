@@ -71415,8 +71415,8 @@ var RtsList = /*#__PURE__*/function (_Component) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\dev\_PHP_Laravel\laravel\gmms\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\dev\_PHP_Laravel\laravel\gmms\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/oxyage/dev/laravel_react_gmms/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/oxyage/dev/laravel_react_gmms/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
