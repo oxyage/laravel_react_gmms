@@ -13,7 +13,7 @@ class CreateSnmpTriggersTable extends Migration
      */
     public function up()
     {
-        Schema::create('snmpTriggersSeeder', function (Blueprint $table) {
+        Schema::create('snmp_triggers', function (Blueprint $table) {
             $table->id();
             $table->integer('trigger_id')->nullable();
             $table->string('oid');
@@ -34,6 +34,6 @@ class CreateSnmpTriggersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('snmpTriggersSeeder');
+        Schema::dropIfExists('snmp_triggers');
     }
 }

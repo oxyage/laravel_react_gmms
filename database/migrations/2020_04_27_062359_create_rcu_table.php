@@ -15,6 +15,9 @@ class CreateRcuTable extends Migration
     {
         Schema::create('rcu', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('host');
+            $table->string('rts_id');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateRcuTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rcus');
+        Schema::dropIfExists('rcu');
     }
 }

@@ -14,7 +14,7 @@ class RcuController extends Controller
      */
     public function index()
     {
-        //
+        return rcu::all();
     }
 
     /**

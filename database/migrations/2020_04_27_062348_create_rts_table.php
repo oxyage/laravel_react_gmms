@@ -29,6 +29,6 @@ class CreateRtsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rtsSeeder');
+        Schema::dropIfExists('rts');
     }
 }

@@ -20,3 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 */
 
 Route::get('/rts', 'RtsController@index');
+Route::get('/rcu', 'RcuController@index');
+
+Route::get('/admin/all', 'AdminController@getAllRTSandRCU');
+

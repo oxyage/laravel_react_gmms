@@ -18,4 +18,10 @@ Route::get('/', function () {
 });
 */
 //Route::view('/','app');
+Route::get('/admin/{path?}', 'AdminController@index');
+
 Route::view('/{path?}', 'app');
+
+
+
+
